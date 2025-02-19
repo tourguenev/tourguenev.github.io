@@ -1,7 +1,7 @@
 # Documentation: https://gohugo.io/getting-started/configuration
 # Don't remove _merge, which imports default config
 theme: hugo-theme-yue
-baseURL: https://tourguenev.fruw.org/ # Change this to your real domain name,
+baseURL: https://tourguenev.github.io/ # Change this to your real domain name,
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 enableGitInfo: false # Set lastmod from git history, this may increase build
