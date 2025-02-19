@@ -22,7 +22,7 @@ params:
     - name: Telegram
       url: //t.me/BibTourg
     - name: GitHub
-      url: //github.com/tourguenev
+      url: //github.com/tourguenev/tourguenev.github.io
     - name: Instagram
       url: //instagram.com/bibliotheque_tourguenev/
     - name: Facebook
