@@ -1,0 +1,101 @@
+# Documentation: https://gohugo.io/getting-started/configuration
+# Don't remove _merge, which imports default config
+theme: hugo-theme-yue
+baseURL: https://tourguenev.fr/ # Change this to your real domain name,
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+enableGitInfo: false # Set lastmod from git history, this may increase build
+enableEmoji: true # Emoji list: https://gohugo.io/quick-reference/emojis/
+enableRobotsTXT: true
+
+params:
+  _merge: deep # Import default config
+  rssFullContent: true
+  homePagerSize: 3
+  sectionPagerSize: 10000 # Default: 10, set this to a large number to remove
+  images:
+    # Default image used in Open Graph, see https://gohugo.io/templates/embed
+    - favicon.ico # /static/favicon.ico
+  social:
+    - name: YouTube
+      url: //youtube.com/@bibliothequetourguenev
+    - name: Telegram
+      url: //t.me/BibTourg
+    - name: GitHub
+      url: //github.com/tourguenev
+    - name: Instagram
+      url: //instagram.com/bibliotheque_tourguenev/
+    - name: Facebook
+      url: //facebook.com/Tourguenev
+
+frontmatter:
+  lastmod: ['lastmod', ':default'] # lastmod in front matter has highest prec
+
+markup:
+  _merge: deep # Import default config
+  goldmark:
+    renderer:
+      unsafe: true # Allow HTML code in Markdown, see https://gohugo.io/getti
+
+# Any key not defined under a languages will fall back to the global value in
+languages:
+  fr:
+    contentDir: content/fr
+    languageCode: fr-FR
+    languageDirection: ltr
+    languageName: French
+    title: La Bibliothèque russe Tourguenev à Paris # Shown in home page
+    weight: 10
+    menus:
+      main:
+        - name: Accueil
+          pageRef: /
+          weight: 10
+        - name: Postes
+          pageRef: /posts
+          weight: 20
+        - name: Tags
+          pageRef: /tags
+          weight: 30
+        - name: A propos de
+          pageRef: /about
+          weight: 40
+    params:
+      dateFormat: 2 Jan 2006 # See https://gohugo.io/functions/time/format/
+      author: La Bibliothèque russe Tourguenev à Paris # Default author, supp
+      footer:
+        copyright:
+          yearStart: 2013 # Optional
+          # yearEnd: 2024 # Optional, default value: current year
+          # author: La Bibliothèque russe Tourguenev à Paris
+  ru:
+    hasCJKLanguage: true
+    contentDir: content/ru
+    languageCode: ru-RU
+    languageDirection: ltr
+    languageName: Русский
+    title: Русская Библиотека им. Тургенева в Париже
+    weight: 20
+    menus:
+      main:
+        - name: Главная
+          pageRef: /
+          weight: 10
+        - name: Посты
+          pageRef: /posts
+          weight: 20
+        - name: Теги
+          pageRef: /tags
+          weight: 30
+        - name: О нас
+          pageRef: /about
+          weight: 40
+    params:
+      dateFormat: 2 Jan 2006
+      author: Русская Библиотека им. Тургенева в Париже
+      footer:
+        copyright:
+          yearStart: 2013
+          # yearEnd: 2024
+          # author: Русская Библиотека им. Тургенева в Париже
+

@@ -1,0 +1,8 @@
+<p class="footer__social">
+  {{- range $index, $key := .Site.Params.Social -}}
+  <a href="{{ $key.url }}" rel="me" title="{{ $key.name }}">{{ $key.name }} </i></a>
+  {{- end -}}
+  {{- with .OutputFormats.Get "rss" -}}
+  <a href="{{ .RelPermalink }}">RSS</a>
+  {{- end }}
+</p>

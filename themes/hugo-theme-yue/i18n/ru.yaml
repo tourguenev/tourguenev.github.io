@@ -1,0 +1,13 @@
+# Sort according to appearance order
+
+# Single page
+authorDelimiter: ", "
+lastmodWrapper: " (Изменено: {{ .lastmod }})"
+tableOfContents: Содержание
+colon: ':' # Taxonomy, e.g. Tags:
+previousPage: "Предыдущий: " # Page nav
+nextPage: "Следующий: " # Page nav
+
+# 404 page, e.g. /en/404.html
+404Message: Страница, которую вы посетили, не найдена.
+404HomeLinkMessage:  Вернуться на главную страницу
