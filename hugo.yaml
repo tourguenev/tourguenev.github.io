@@ -1,7 +1,7 @@
 # Documentation: https://gohugo.io/getting-started/configuration
 # Don't remove _merge, which imports default config
 theme: hugo-theme-yue
-baseURL: https://tourguenev.fr/ # Change this to your real domain name,
+baseURL: https://tourguenev.fruw.org/ # Change this to your real domain name,
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 enableGitInfo: false # Set lastmod from git history, this may increase build
@@ -22,7 +22,7 @@ params:
     - name: Telegram
       url: //t.me/BibTourg
     - name: GitHub
-      url: //github.com/tourguenev/tourguenev.github.io
+      url: //github.com/tourguenev
     - name: Instagram
       url: //instagram.com/bibliotheque_tourguenev/
     - name: Facebook
@@ -60,6 +60,9 @@ languages:
         - name: A propos de
           pageRef: /about
           weight: 40
+        - name: Soutenir
+          url: https://helloasso.com/associations/la-bibliotheque-russe-tourguenev
+          weight: 50
     params:
       dateFormat: 2 Jan 2006 # See https://gohugo.io/functions/time/format/
       author: La Bibliothèque russe Tourguenev à Paris # Default author, supp
@@ -90,6 +93,9 @@ languages:
         - name: О нас
           pageRef: /about
           weight: 40
+        - name: Поддержать
+          url: https://helloasso.com/associations/la-bibliotheque-russe-tourguenev
+          weight: 50
     params:
       dateFormat: 2 Jan 2006
       author: Русская Библиотека им. Тургенева в Париже
