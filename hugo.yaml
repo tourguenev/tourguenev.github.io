@@ -61,7 +61,7 @@ languages:
           pageRef: /about
           weight: 40
         - name: Soutenir
-          url: https://helloasso.com/associations/la-bibliotheque-russe-tourguenev
+          url: https://www.helloasso.com/associations/la-bibliotheque-russe-tourguenev
           weight: 50
     params:
       dateFormat: 2 Jan 2006 # See https://gohugo.io/functions/time/format/
